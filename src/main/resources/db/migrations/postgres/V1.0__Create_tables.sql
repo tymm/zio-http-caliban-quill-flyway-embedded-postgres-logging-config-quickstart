@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS order_table (
+    id BIGSERIAL PRIMARY KEY,
+    order_date TIMESTAMPTZ NOT NULL
+);
