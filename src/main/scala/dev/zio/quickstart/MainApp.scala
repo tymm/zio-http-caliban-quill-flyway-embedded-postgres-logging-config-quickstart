@@ -27,14 +27,12 @@ object MainApp extends ZIOAppDefault {
   override def run =
     (for {
       handlers <- api.interpreter.map(QuickAdapter(_).handlers)
-      _ <- Server
-             .serve(
-               Routes(
+      routes = Routes(
                  Method.GET / "text"            -> handler(Response.text("Hello World!")),
                  Method.ANY / "api" / "graphql" -> handlers.api,
                  Method.GET / "graphql"         -> handler(Response.text(api.render))
-               ).toHttpApp
-             )
+               )
+      _ <- Server.serve(routes)
       _ <- ZIO.logInfo("Server started on port 8080")
     } yield ()).provide(
       PostgresConfig.live,

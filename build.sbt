@@ -45,7 +45,7 @@ libraryDependencies ++= Seq(
   "dev.zio"               %% "zio-config-magnolia"        % "4.0.1",
   "dev.zio"               %% "zio-config-typesafe"        % "4.0.1",
   "dev.zio"               %% "zio-config-refined"         % "4.0.1",
-  "dev.zio"               %% "zio-http"                   % "3.0.0-RC4",
+  "dev.zio"               %% "zio-http"                   % "3.0.0-RC9",
   "dev.zio"               %% "zio-logging"                % "2.2.2",
   "dev.zio"               %% "zio-query"                  % "0.7.0",
   "io.getquill"           %% "quill-jdbc-zio"             % "4.8.3",
