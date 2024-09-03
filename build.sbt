@@ -38,8 +38,8 @@ val postgresql = {
 }
 
 libraryDependencies ++= Seq(
-  "com.github.ghostdogpr" %% "caliban"                    % "2.6.0",
-  "com.github.ghostdogpr" %% "caliban-quick"              % "2.6.0",
+  "com.github.ghostdogpr" %% "caliban"                    % "2.8.1",
+  "com.github.ghostdogpr" %% "caliban-quick"              % "2.8.1",
   "dev.zio"               %% "zio"                        % "2.1.6",
   "dev.zio"               %% "zio-config"                 % "4.0.1",
   "dev.zio"               %% "zio-config-magnolia"        % "4.0.1",
